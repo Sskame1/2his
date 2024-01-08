@@ -7,6 +7,10 @@
     right: 0;
 }
 
+.Decore_sm {
+    display: none;
+}
+
 .Nav {
     display: flex;
     justify-content: space-around;
@@ -443,10 +447,152 @@
 }
 
 @include mobile {
+    .Decore {
+        display: none;
+    }
+
+    .Decore_sm {
+        display: flex;
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        right: 0;
+    }
+    .Nav {
+        div {
+            a {
+                margin-left: 10px;
+                font-size: 12px;
+            }
+
+            .register {
+                padding: 5px 5px;
+                font-size: 12px;
+            }
+        }
+    }
+
     .Welcome__content {
+        margin-left: 50px;
+        .tagline {
+            font-size: 12px;
+        }
+        .heading {
+            width: 350px;
+            font-size: 24px;
+        }
+
         .desc {
             width: 390px;
-            height: 143px;
+            height: 200px;
+            font-size: 12px;
         }
+    }
+
+    .Category {
+        .Category__card {
+            .card {
+                width: 85px;
+                height: 110px;
+
+                img {
+                    width: 39px;
+                    height: 31.7px;
+                    margin-left: 24px;
+                }
+
+                .title {
+                    font-size: 8px;
+                    padding-bottom: 8px;
+                }
+
+                .desc {
+                    font-size: 7px;
+                    line-height: 12px;
+                    width: 80px;
+                }
+            }
+
+            .card:hover {
+                border-radius: 15px;
+            }
+
+            .card:first-child, .card:last-child {
+                display: none;
+            }
+
+        }
+    }
+
+    .Feedback {
+        .desc {
+            .Subheading {
+                width: 62.715px;
+                height: 21px;
+                font-size: 10px;
+            }
+
+            .Heading {
+                width: 144.469px;
+                height: 15px;
+                font-size: 12px;
+            }
+        }
+        .content {
+            img {
+                width: 48.156px;
+                height: 45.098px;
+            }
+            .block {
+                width: 247px;
+                height: 200px;
+
+                .desc {
+                    font-size: 8px;
+                    width: 266px;
+                    height: 171px;
+                    line-height: 16px;
+                }
+
+                .name {
+                    font-size: 12px;
+                }
+
+                .info {
+                    font-size: 12px;
+                    margin-left: 34px;
+                }
+            }
+        }
+    }
+
+    .Footer {
+        .content {
+            .company {
+                .NameCompany {
+                    font-size: 19px;
+                    font-weight: 700;        
+                }
+                .desc {
+                    width: 47.515px;
+                    height: 50.101px;
+                    font-size: 8px;
+                }
+            }
+           .navCol {
+            .nav {
+                .title {
+                    font-size: 15px;
+                }
+                .button {
+                    font-size: 10px;
+                }
+            }
+            .nav:last-child {
+                padding-right: 0;
+            }
+        } 
+        }
+        
     }
 }
