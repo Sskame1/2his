@@ -27,7 +27,7 @@ export default function Category() {
             <div className={style.card}>
                 <Image src={micro} className={style.image} />
                 <div className={style.title}>Постоянные ивенты</div>
-                <div className={style.desc}>У нас в городе часто кто то проводит разные конкурсы и ивенты!</div>
+                <div className={style.desc}>В городе часто проводятся конкурсы и ивенты!</div>
             </div>
             <div className={style.card}>
                 <Image src={burger} className={style.image} />
