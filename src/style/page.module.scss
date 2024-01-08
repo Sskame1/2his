@@ -596,3 +596,9 @@
         
     }
 }
+
+@include smallMobile {
+    .Welcome__content {
+        margin-left: 0;
+    }
+}
