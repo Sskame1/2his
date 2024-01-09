@@ -614,3 +614,73 @@
         
     }
 }
+
+@include smallMobile {
+
+    .Nav {
+        a {
+            font-size: 10px;
+
+            img {
+                height: 60px;
+                width: 50px;
+            }
+        }
+    }
+
+    .Welcome__content {
+        margin-left: 10px;
+        .tagline {
+            font-size: 10px;
+        }
+
+        .heading {
+            font-size: 16px;
+            width: 300px;
+        }
+
+        .desc {
+            width: 250px;
+            height: 300px;
+        }
+
+        .button {
+            margin-left: 35px;
+        }
+    }
+
+    .Feedback {
+        .desc {
+            .Heading {
+                width: 78.469px;
+                height: 70px;
+            }
+        }
+        .content {
+            .block {
+                width: 180px;
+                height: 280px;
+
+                .desc {
+                    // padding-right: 20px;
+                    width: 191px;
+                    height: 248px;
+                }
+            }
+        }
+    }
+
+    .Footer {
+        .content {
+            .company {
+                padding-left: 10px;
+                padding-right: 30px;
+            }
+            .navCol {
+                .nav {
+                    padding-right: 30px;
+                }
+            }
+        }
+    }
+}
