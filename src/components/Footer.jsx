@@ -13,10 +13,10 @@ export default function Footer() {
                 <div className={style.nav}>
                     <div className={style.title}>Стартап</div>
                     <a href="" className={style.button}>О нас</a>
-                    <a href="" className={style.button}>Mobile</a>
+                    <a href="" className={style.button}>Мобильная версия</a>
                 </div>
                 <div className={style.nav}>
-                    <div className={style.title}>contact</div>
+                    <div className={style.title}>Контакты</div>
                     <a href="" className={style.button}>помощь/FAQ</a>
                     <a href="" className={style.button}>Социальные Сети</a>
                 </div>

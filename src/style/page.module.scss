@@ -26,6 +26,7 @@
 
         a {
             margin-left: 60px;
+            transition: all 500ms ease;
         }
 
         a:first-child {
@@ -69,10 +70,15 @@
     .button {
         padding: 19px 40px;
         margin-left: 150px;
+        transition: all 500ms ease;
 
         border-radius: 10px;
         background: #43DBC9;
         box-shadow: 0px 20px 35px 0px rgba(241, 165, 1, 0.15);
+
+        &:hover {
+            box-shadow: 0px 0px 25px 14px rgba(241, 165, 1, 0.30);
+        }
     }
 }
 
@@ -459,6 +465,7 @@
         right: 0;
     }
     .Nav {
+        padding-left: 0;
         div {
             a {
                 margin-left: 10px;
@@ -490,7 +497,12 @@
     }
 
     .Category {
+        .best_category {
+            font-size: 20px;
+        }
+
         .Category__card {
+            flex-wrap: wrap;
             .card {
                 width: 85px;
                 height: 110px;
@@ -521,6 +533,12 @@
                 display: none;
             }
 
+        }
+    }
+
+    .Destinations {
+        .Heading {
+            font-size: 20px;
         }
     }
 
@@ -594,11 +612,5 @@
         } 
         }
         
-    }
-}
-
-@include smallMobile {
-    .Welcome__content {
-        margin-left: 0;
     }
 }
